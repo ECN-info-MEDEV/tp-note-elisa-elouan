@@ -1,4 +1,4 @@
-package org.centrale.dames;
+package org.centrale.note;
 
 public class Main {
 
