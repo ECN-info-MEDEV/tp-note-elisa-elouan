@@ -10,6 +10,16 @@ public class Ligne {
         this.choix = new ArrayList<PionCouleur>();
     }
 
+    public Ligne(PionCouleur a, PionCouleur b, PionCouleur c, PionCouleur d) {
+        this.choix = new ArrayList<PionCouleur>();
+        choix.add(a);
+        choix.add(b);
+        choix.add(c);
+        choix.add(d);
+    }
+
+    
+
     /**
      * @param choix
      */
