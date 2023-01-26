@@ -36,10 +36,10 @@ public class Ligne {
      * @param c3 4eme pion
      */
     public void remplirLigne(PionCouleur c0, PionCouleur c1, PionCouleur c2, PionCouleur c3){
-        this.choix.set(0,c0);
-        this.choix.set(1,c1);
-        this.choix.set(2,c2);
-        this.choix.set(3,c3);
+        this.choix.add(c0);
+        this.choix.add(c1);
+        this.choix.add(c2);
+        this.choix.add(c3);
     }
     
 }
