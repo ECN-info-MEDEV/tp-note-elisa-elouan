@@ -6,7 +6,14 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        Jeu jeu = new Jeu();
-        jeu.partie();
+        System.out.println("Hello World!");
+        Plateau p = new Plateau();
+
+        try {
+            p.affichePlateau();
+            System.out.println("Pas d'erreur");
+        } catch (Exception e) {
+            System.out.println("Erreur : "+e);
+        }
     }
 }
