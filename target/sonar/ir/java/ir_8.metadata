@@ -1,0 +1,5 @@
+org.centrale.note.Jeu#<init>()V
+org.centrale.note.Plateau#instance-init#
+org.centrale.note.Plateau#<init>()V
+org.centrale.note.Joueur#<init>(Ljava/lang/Boolean;)V
+org.centrale.note.Joueur#instance-init#

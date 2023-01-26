@@ -1,1 +1,1 @@
-org.centrale.note.Main#main([Ljava/lang/String;)V
+org.centrale.note.PionCouleur#setCouleur(I)V
