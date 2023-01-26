@@ -10,15 +10,16 @@ public class Plateau {
     private List<Ligne> essai;
     private List<Pion> code;
 
+
     public Plateau(){
         nbLigne = 12;
-        verif = new Linkedlist<>();
-        essai = new LinkedList<>();
-        code = new LinkedList<>();
-        init(essai, verif);
+        List verif = new Linkedlist<PionVerif>();
+        List essai = new LinkedList<PionCouleur>();
+        List code = new LinkedList<PionCouleur>();
+        init(code);
     }
     
-    public void init(LinkedList code){
+    public void init(List code){
         Boolean invalid = true;
         while (invalid){
             System.out.println("Choisir la couleur des pions (rentrer 4 chiffres de 1 à 6");
@@ -31,10 +32,10 @@ public class Plateau {
             if ((a<7)&&(a>0)&&(b<7)&&(b>0)&&(c<7)&&(c>0)&&(d<7)&&(d>0)){
                 invalid = false;
             }
-            code.append(a);
-            code.append(b);
-            code.append(c);
-            code.append(d);
+            code.add(a);
+            code.add(b);
+            code.add(c);
+            code.add(d);
         }
 
     }
