@@ -1,31 +1,30 @@
 package org.centrale.note;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.ArrayList;
 
 public class Ligne {
-    private LinkedList<PionCouleur> choix;
+    private ArrayList<PionCouleur> choix;
 
 
     public Ligne() {
-        this.choix = new LinkedList<PionCouleur>();
+        this.choix = new ArrayList<PionCouleur>();
     }
 
     /**
      * @param choix
      */
-    public Ligne(LinkedList<PionCouleur> choix) {
+    public Ligne(ArrayList<PionCouleur> choix) {
         this.choix = choix;
     }
 
-    public LinkedList<PionCouleur> getChoix() {
+    public ArrayList<PionCouleur> getChoix() {
         return choix;
     }
 
     /**
      * @param choix
      */
-    public void setChoix(LinkedList<PionCouleur> choix) {
+    public void setChoix(ArrayList<PionCouleur> choix) {
         this.choix = choix;
     }
 
