@@ -77,5 +77,20 @@ public class Plateau {
         this.code = code;
     }
 
+    public void affichePlateau(){
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Choix de couleur    Analyse");
+        System.out.println("");
+        for (int i=0;i<this.nbLigne;i++){
+            try{
+                this.essai.get(i).afficheLigne();
+                this.verif.get(i).afficheVerif();
+            } catch (Exception e) {
+                System.out.println("Erreur");
+            }
+        }
+    }
+
 
 }

@@ -53,5 +53,17 @@ public class Verif {
         this.verif = verif;
     }
 
+    public void afficheVerif(){
+        int n = this.verif.size();
+        for (int i=0;i<n;i++){
+            if (verif.get(i).getCouleur()){
+                System.out.print("B ");
+            } else {
+                System.out.print("M ");
+            }
+        }
+        System.out.println("");
+    }
+
 
 }

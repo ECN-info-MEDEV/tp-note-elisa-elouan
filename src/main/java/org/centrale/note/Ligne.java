@@ -42,5 +42,19 @@ public class Ligne {
         this.choix.add(c3);
     }
 
+    public void afficheLigne(){
+        System.out.print("    ");
+        if (this.choix.size()==4){
+            System.out.print(this.choix.get(0).getCouleur()+" ");
+            System.out.print(this.choix.get(1).getCouleur()+" ");
+            System.out.print(this.choix.get(2).getCouleur()+" ");
+            System.out.print(this.choix.get(3).getCouleur()+"         ");
+        } else {
+            System.out.print("_ ");
+            System.out.print("_ ");
+            System.out.print("_ ");
+            System.out.print("_         ");
+        }
+    }
     
 }

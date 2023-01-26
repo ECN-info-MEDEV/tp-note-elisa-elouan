@@ -1,0 +1,4 @@
+org.centrale.note.Plateau#<init>()V
+java.util.ArrayList#<init>()V
+org.centrale.note.Plateau#init(Ljava/util/ArrayList;)V
+java.util.ArrayList#instance-init#
