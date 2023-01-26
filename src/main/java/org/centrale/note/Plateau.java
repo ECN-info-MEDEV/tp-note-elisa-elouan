@@ -31,17 +31,13 @@ public class Plateau {
             if ((a1<7)&&(a1>0)&&(b2<7)&&(b2>0)&&(c3<7)&&(c3>0)&&(d4<7)&&(d4>0)){
                 invalid = false;
             }
-            PionCouleur a = new PionCouleur();
-            a.setCouleur(a1);
+            PionCouleur a = new PionCouleur(a1);
             code.add(a);
-            PionCouleur b = new PionCouleur();
-            b.setCouleur(b2);
+            PionCouleur b = new PionCouleur(b2);
             code.add(b);
-            PionCouleur c = new PionCouleur();
-            c.setCouleur(c3);
+            PionCouleur c = new PionCouleur(c3);
             code.add(c);
-            PionCouleur d = new PionCouleur();
-            d.setCouleur(d4);
+            PionCouleur d = new PionCouleur(d4);
             code.add(d);
         }
         sc.close();
