@@ -13,7 +13,7 @@ public class PionVerif extends Pion {
         this.couleur = couleur;
     }
 
-    public boolean isCouleur() {
+    public boolean getCouleur() {
         return couleur;
     }
 
