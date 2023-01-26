@@ -7,28 +7,33 @@ public class Verif {
     private List<PionVerif> verif;
 
     public Verif(){
-        List<PionVerif> verif = new ArrayList<PionVerif>();
+        this.verif = new ArrayList<PionVerif>();
     }
 
     public Boolean verifLigne(Ligne ligne, Plateau plateau){
         int len = plateau.getEssai().size();
         ArrayList<Boolean> etat = new ArrayList<>();
+        ArrayList<Boolean> etatbis = new ArrayList<>();
         for (int i = 0; i < 4; i++){
             etat.add(false);
+            etatbis.add(false);
         }
         //Vérfication d'un pion à la bonne place et de la bonne couleur
         for (int i = 0; i<4; i++){
-            if (ligne.getChoix().get(i).getCouleur() == plateau.getEssai().get(len).getChoix().get(i).getCouleur()){
-                verif.add(new PionVerif(true));
+            if (plateau.getCode().get(i).getCouleur() == plateau.getEssai().get(len-1).getChoix().get(i).getCouleur()){
+                this.verif.add(new PionVerif(true));
                 etat.set(i, true);
+                etatbis.set(i, true);
             }
         }
         //Vérification de la couleur des pions lorsqu'ils ne sont pas à la bonne place
         for (int i = 0; i < 4; i++){
             for (int j = 0; j < 4; j++){
-                if ((ligne.getChoix().get(i).getCouleur() == plateau.getEssai().get(len).getChoix().get(j).getCouleur())&&(etat.get(i)==true)){
-                    verif.add(new PionVerif(false));
+                if ((plateau.getCode().get(i).getCouleur() == plateau.getEssai().get(len-1).getChoix().get(j).getCouleur())&&(etat.get(i)==false)&&(etatbis.get(j)==false)){
+                    this.verif.add(new PionVerif(false));
+                    System.out.println(i+" "+j);
                     etat.set(i, true);
+                    etatbis.set(j, true);
                 }
             }
         }
@@ -39,6 +44,7 @@ public class Verif {
             if(etat.get(i) == false){
                 trouve = false;
             }
+            i++;
         }
         return trouve;
         

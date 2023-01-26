@@ -18,21 +18,21 @@ public class Jeu {
     
     public Boolean tourJeu(){
         Boolean trouve;
-        plateau.getEssai().add(new Ligne());        
+        plateau.getEssai().add(new Ligne());
         int len = plateau.getEssai().size();
         Boolean invalid = true;
-        Scanner sc = new Scanner(System.in) ;
         PionCouleur a = new PionCouleur() ;
         PionCouleur b = new PionCouleur();
         PionCouleur c = new PionCouleur();
         PionCouleur d = new PionCouleur();
+        Scanner sc1 = new Scanner(System.in);
         while (invalid){
-            System.out.println("Choisir la couleur des pions (rentrer 4 chiffres de 1 à 6");
-            String s = sc.nextLine();
-            int a1 = s.charAt(0) - '0';
-            int b2 = s.charAt(1) - '0';
-            int c3 = s.charAt(2) - '0';
-            int d4 = s.charAt(3) - '0';
+            System.out.println("Choisir la couleur des pions de votre ligne (rentrer 4 chiffres de 1 à 6)");
+            String s1 = sc1.nextLine();
+            int a1 = s1.charAt(0) - '0';
+            int b2 = s1.charAt(1) - '0';
+            int c3 = s1.charAt(2) - '0';
+            int d4 = s1.charAt(3) - '0';
             if ((a1<7)&&(a1>0)&&(b2<7)&&(b2>0)&&(c3<7)&&(c3>0)&&(d4<7)&&(d4>0)){
                 invalid = false;
             }
@@ -41,10 +41,11 @@ public class Jeu {
             c.setCouleur(c3);
             d.setCouleur(d4);
         }
-        plateau.getEssai().get(len).remplirLigne(a, b, c, d);
+        plateau.getEssai().get(len-1).remplirLigne(a, b, c, d);
         plateau.getVerif().add(new Verif());
-        Verif ligneToVerif = plateau.getVerif().get(len);
-        trouve = ligneToVerif.verifLigne(plateau.getEssai().get(len),plateau);
+        Verif ligneToVerif = plateau.getVerif().get(len-1);
+        trouve = ligneToVerif.verifLigne(plateau.getEssai().get(len-1),plateau);
+        plateau.affichePlateau();
         return trouve;
     }
 

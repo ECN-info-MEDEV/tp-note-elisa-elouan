@@ -6,12 +6,10 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        Plateau p = new Plateau();
+        Jeu jeu = new Jeu();
 
         try {
-            p.affichePlateau();
-            System.out.println("Pas d'erreur");
+            jeu.partie();
         } catch (Exception e) {
             System.out.println("Erreur : "+e);
         }

@@ -22,7 +22,7 @@ public class Plateau {
         Boolean invalid = true;
         Scanner sc = new Scanner(System.in) ;
         while (invalid){
-            System.out.println("Choisir la couleur des pions (rentrer 4 chiffres de 1 à 6");
+            System.out.println("Choisir la couleur des pions (rentrer 4 chiffres de 1 à 6)");
             String s = sc.nextLine();
             int a1 = s.charAt(0) - '0';
             int b2 = s.charAt(1) - '0';
@@ -39,8 +39,8 @@ public class Plateau {
             code.add(c);
             PionCouleur d = new PionCouleur(d4);
             code.add(d);
+            System.out.println("Le code est rentré");
         }
-        sc.close();
 
     }
 
