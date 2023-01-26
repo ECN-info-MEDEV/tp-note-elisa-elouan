@@ -82,12 +82,12 @@ public class Plateau {
         System.out.println("");
         System.out.println("Choix de couleur    Analyse");
         System.out.println("");
-        for (int i=0;i<this.nbLigne;i++){
+        for (int i=0;i<this.essai.size();i++){
             try{
                 this.essai.get(i).afficheLigne();
                 this.verif.get(i).afficheVerif();
             } catch (Exception e) {
-                System.out.println("Erreur");
+                System.out.println("Pas de ligne à afficher");
             }
         }
     }
