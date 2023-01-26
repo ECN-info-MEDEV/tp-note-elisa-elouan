@@ -48,6 +48,23 @@ public class Jeu {
         return trouve;
     }
 
+    public void partie(){
+        Boolean trouve = false;
+        int tr = 1;
+        while ((!trouve)&&(tr < 13)){
+            trouve = tourJeu();
+            tr++;
+        }
+        if (joueur1.getRole()){
+            joueur1.setScore(joueur1.getScore()+(12-tr));
+        }
+        if (joueur2.getRole()){
+            joueur2.setScore(joueur2.getScore()+(12-tr));
+        }
+        joueur1.setRole(!joueur1.getRole());
+        joueur2.setRole(!joueur2.getRole());
+    }
+
     
 
     public Plateau getPlateau() {
