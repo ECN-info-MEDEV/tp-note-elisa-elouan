@@ -1,0 +1,43 @@
+package org.centrale.note;
+
+import java.util.List;
+
+public class Ligne {
+    private List<PionCouleur> choix;
+
+    public Ligne() {
+    }
+
+    /**
+     * @param choix
+     */
+    public Ligne(List<PionCouleur> choix) {
+        this.choix = choix;
+    }
+
+    public List<PionCouleur> getChoix() {
+        return choix;
+    }
+
+    /**
+     * @param choix
+     */
+    public void setChoix(List<PionCouleur> choix) {
+        this.choix = choix;
+    }
+
+    /**
+     * Remplit la ligne avec les pions choisis.
+     * @param c0 1er pion
+     * @param c1 2nd pion
+     * @param c2 3eme pion
+     * @param c3 4eme pion
+     */
+    public void remplirLigne(PionCouleur c0, PionCouleur c1, PionCouleur c2, PionCouleur c3){
+        this.choix.set(0,c0);
+        this.choix.set(1,c1);
+        this.choix.set(2,c2);
+        this.choix.set(3,c3);
+    }
+    
+}
