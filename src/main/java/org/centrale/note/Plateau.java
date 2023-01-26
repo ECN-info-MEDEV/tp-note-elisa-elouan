@@ -1,7 +1,6 @@
 package org.centrale.note;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Plateau {
@@ -21,9 +20,9 @@ public class Plateau {
     
     public static void init(ArrayList<PionCouleur> code){
         Boolean invalid = true;
+        Scanner sc = new Scanner(System.in) ;
         while (invalid){
             System.out.println("Choisir la couleur des pions (rentrer 4 chiffres de 1 à 6");
-            Scanner sc = new Scanner(System.in) ;
             String s = sc.nextLine();
             int a1 = s.charAt(0) - '0';
             int b2 = s.charAt(1) - '0';
@@ -45,6 +44,7 @@ public class Plateau {
             d.setCouleur(d4);
             code.add(d);
         }
+        sc.close();
 
     }
 
