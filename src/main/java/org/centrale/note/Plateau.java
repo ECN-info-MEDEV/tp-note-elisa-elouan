@@ -6,16 +6,16 @@ import java.util.Scanner;
 
 public class Plateau {
     private int nbLigne;
-    private List<Verif> verif;
-    private List<Ligne> essai;
-    private List<Pion> code;
+    private ArrayList<Verif> verif;
+    private ArrayList<Ligne> essai;
+    private ArrayList<PionCouleur> code;
 
 
     public Plateau(){
         nbLigne = 12;
-        List<PionVerif> verif = new ArrayList<PionVerif>();
-        List<PionCouleur> essai = new ArrayList<PionCouleur>();
-        List<PionCouleur> code = new ArrayList<PionCouleur>();
+        this.verif = new ArrayList<Verif>();
+        this.essai = new ArrayList<Ligne>();
+        this.code = new ArrayList<PionCouleur>();
         init(code);
     }
     
