@@ -1,1 +1,11 @@
-org.centrale.note.PionVerif#instance-init#
+org.centrale.note.Jeu#tourJeu()Ljava/lang/Boolean;
+java.util.Scanner#instance-init#
+java.util.Scanner#nextLine()Ljava/lang/String;
+org.centrale.note.Verif#<init>()V
+java.lang.String#charAt(I)C
+org.centrale.note.Ligne#<init>()V
+java.util.Scanner#<init>(Ljava/io/InputStream;)V
+org.centrale.note.PionCouleur#<init>()V
+org.centrale.note.PionCouleur#instance-init#
+org.centrale.note.Verif#instance-init#
+org.centrale.note.Ligne#instance-init#

@@ -1,1 +1,1 @@
-org.centrale.note.Ligne#remplirLigne(Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;)V
+org.centrale.note.Joueur#setRole(Ljava/lang/Boolean;)V

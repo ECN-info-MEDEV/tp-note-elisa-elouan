@@ -1,0 +1,8 @@
+org.centrale.note.Plateau#init(Ljava/util/ArrayList;)V
+java.util.Scanner#instance-init#
+java.util.Scanner#nextLine()Ljava/lang/String;
+org.centrale.note.PionCouleur#<init>(I)V
+java.util.Scanner#close()V
+java.lang.String#charAt(I)C
+java.util.Scanner#<init>(Ljava/io/InputStream;)V
+org.centrale.note.PionCouleur#instance-init#

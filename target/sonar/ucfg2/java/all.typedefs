@@ -22,104 +22,48 @@ hashCode()java.lang.Object#hashCode()IX
 <init>()'org.centrale.note.PionCouleur#<init>()V5
 	<init>(I)(org.centrale.note.PionCouleur#<init>(I)V=
 setCouleur(I),org.centrale.note.PionCouleur#setCouleur(I)V;
-getCouleur()+org.centrale.note.PionCouleur#getCouleur()IV
-org.centrale.note.Jeujava.lang.Object+
-<init>()org.centrale.note.Jeu#<init>()Vµ
-org.centrale.note.Plateaujava.lang.Object/
+getCouleur()+org.centrale.note.PionCouleur#getCouleur()I£
+org.centrale.note.Jeujava.lang.Objectg
+&setJoueur1(Lorg/centrale/note/Joueur;)=org.centrale.note.Jeu#setJoueur1(Lorg/centrale/note/Joueur;)V1
+setTrJeu(I)"org.centrale.note.Jeu#setTrJeu(I)Vg
+&setJoueur2(Lorg/centrale/note/Joueur;)=org.centrale.note.Jeu#setJoueur2(Lorg/centrale/note/Joueur;)V+
+<init>()org.centrale.note.Jeu#<init>()VL
+getJoueur2()<org.centrale.note.Jeu#getJoueur2()Lorg/centrale/note/Joueur;L
+getJoueur1()<org.centrale.note.Jeu#getJoueur1()Lorg/centrale/note/Joueur;i
+'setPlateau(Lorg/centrale/note/Plateau;)>org.centrale.note.Jeu#setPlateau(Lorg/centrale/note/Plateau;)V?
+	tourJeu()2org.centrale.note.Jeu#tourJeu()Ljava/lang/Boolean;/
+
+getTrJeu()!org.centrale.note.Jeu#getTrJeu()IM
+getPlateau()=org.centrale.note.Jeu#getPlateau()Lorg/centrale/note/Plateau;ﬁ
+org.centrale.note.Plateaujava.lang.Object9
+setNbLigne(I)(org.centrale.note.Plateau#setNbLigne(I)V]
+setEssai(Ljava/util/ArrayList;):org.centrale.note.Plateau#setEssai(Ljava/util/ArrayList;)V/
 <init>()#org.centrale.note.Plateau#<init>()VU
-init(Ljava/util/ArrayList;)6org.centrale.note.Plateau#init(Ljava/util/ArrayList;)VÇ
-org.centrale.note.Joueurjava.lang.ObjectT
-<init>(Ljava/lang/Boolean;)5org.centrale.note.Joueur#<init>(Ljava/lang/Boolean;)Vì
-org.centrale.note.PionVeriforg.centrale.note.Pion1
-<init>()%org.centrale.note.PionVerif#<init>()V7
-isCouleur()(org.centrale.note.PionVerif#isCouleur()Z3
-	<init>(Z)&org.centrale.note.PionVerif#<init>(Z)V;
-setCouleur(Z)*org.centrale.note.PionVerif#setCouleur(Z)V®
-org.centrale.note.Mainjava.lang.Object,
-<init>() org.centrale.note.Main#<init>()VN
-main([Ljava/lang/String;)1org.centrale.note.Main#main([Ljava/lang/String;)V(
-java.lang.Appendablejava.lang.Object+
-java.lang.AutoCloseablejava.lang.Object>
-java.io.Closeablejava.lang.Objectjava.lang.AutoCloseable%
-java.io.Flushablejava.lang.ObjectÉ
-java.io.OutputStreamjava.io.Closeablejava.lang.Objectjava.io.FlushableS
-nullOutputStream()=java.io.OutputStream#nullOutputStream()Ljava/io/OutputStream;,
-	write([B)java.io.OutputStream#write([B)V*
-<init>()java.io.OutputStream#<init>()V(
-flush()java.io.OutputStream#flush()V0
-write([BII)!java.io.OutputStream#write([BII)V(
-close()java.io.OutputStream#close()Vé
-java.io.FilterOutputStreamjava.io.OutputStream2
-	write([B)%java.io.FilterOutputStream#write([B)V\
-<init>(Ljava/io/OutputStream;):java.io.FilterOutputStream#<init>(Ljava/io/OutputStream;)V.
-flush()#java.io.FilterOutputStream#flush()V0
-write(I)$java.io.FilterOutputStream#write(I)V6
-write([BII)'java.io.FilterOutputStream#write([BII)V.
-close()#java.io.FilterOutputStream#close()V±"
-java.io.PrintStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStream+
-	write([C)java.io.PrintStream#write([C)V)
-print(J)java.io.PrintStream#print(J)V-
+init(Ljava/util/ArrayList;)6org.centrale.note.Plateau#init(Ljava/util/ArrayList;)V7
+getNbLigne()'org.centrale.note.Plateau#getNbLigne()IG
 
-println(J)java.io.PrintStream#println(J)V)
-print(F)java.io.PrintStream#print(F)V/
-writeln([C) java.io.PrintStream#writeln([C)V-
+getVerif()9org.centrale.note.Plateau#getVerif()Ljava/util/ArrayList;E
+	getCode()8org.centrale.note.Plateau#getCode()Ljava/util/ArrayList;G
 
-println(F)java.io.PrintStream#println(F)V/
-write([BII) java.io.PrintStream#write([BII)VÅ
-4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Ijava.io.PrintStream#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)V)
-print(Z)java.io.PrintStream#print(Z)V1
-clearError()!java.io.PrintStream#clearError()V-
+getEssai()9org.centrale.note.Plateau#getEssai()Ljava/util/ArrayList;[
+setCode(Ljava/util/ArrayList;)9org.centrale.note.Plateau#setCode(Ljava/util/ArrayList;)V?
+affichePlateau()+org.centrale.note.Plateau#affichePlateau()V]
+setVerif(Ljava/util/ArrayList;):org.centrale.note.Plateau#setVerif(Ljava/util/ArrayList;)Và
+org.centrale.note.Joueurjava.lang.ObjectB
+	getRole()5org.centrale.note.Joueur#getRole()Ljava/lang/Boolean;2
 
-println(Z)java.io.PrintStream#println(Z)Vi
-(<init>(Ljava/io/File;Ljava/lang/String;)=java.io.PrintStream#<init>(Ljava/io/File;Ljava/lang/String;)V)
-write(I)java.io.PrintStream#write(I)VO
-println(Ljava/lang/Object;)0java.io.PrintStream#println(Ljava/lang/Object;)VK
-print(Ljava/lang/String;).java.io.PrintStream#print(Ljava/lang/String;)Ví
-4requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Zjava.io.PrintStream#requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
-print(I)java.io.PrintStream#print(I)V-
+getScore()$org.centrale.note.Joueur#getScore()I4
+setScore(I)%org.centrale.note.Joueur#setScore(I)VV
+setRole(Ljava/lang/Boolean;)6org.centrale.note.Joueur#setRole(Ljava/lang/Boolean;)VT
+<init>(Ljava/lang/Boolean;)5org.centrale.note.Joueur#<init>(Ljava/lang/Boolean;)V»
+org.centrale.note.Lignejava.lang.ObjectW
+<init>(Ljava/util/ArrayList;)6org.centrale.note.Ligne#<init>(Ljava/util/ArrayList;)V-
+<init>()!org.centrale.note.Ligne#<init>()V[
+setChoix(Ljava/util/ArrayList;)8org.centrale.note.Ligne#setChoix(Ljava/util/ArrayList;)V9
+afficheLigne()'org.centrale.note.Ligne#afficheLigne()V≥
+äremplirLigne(Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;)£org.centrale.note.Ligne#remplirLigne(Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;)VE
 
-println(I)java.io.PrintStream#println(I)V'
-flush()java.io.PrintStream#flush()V´
-?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;m
- append(Ljava/lang/CharSequence;)Ijava.io.PrintStream#append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;l
-toCharset(Ljava/lang/String;)Kjava.io.PrintStream#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;W
-<init>(ZLjava/io/OutputStream;)4java.io.PrintStream#<init>(ZLjava/io/OutputStream;)V+
-	print([C)java.io.PrintStream#print([C)Vq
-"append(Ljava/lang/CharSequence;II)Kjava.io.PrintStream#append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;)
-print(D)java.io.PrintStream#print(D)Vq
-,<init>(Ljava/lang/String;Ljava/lang/String;)Ajava.io.PrintStream#<init>(Ljava/lang/String;Ljava/lang/String;)V-
-
-println(D)java.io.PrintStream#println(D)VO
-println(Ljava/lang/String;)0java.io.PrintStream#println(Ljava/lang/String;)VW
-<init>(Ljava/io/OutputStream;Z)4java.io.PrintStream#<init>(Ljava/io/OutputStream;Z)VE
-<init>(Ljava/io/File;)+java.io.PrintStream#<init>(Ljava/io/File;)Vy
-0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Ejava.io.PrintStream#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)V1
-ensureOpen()!java.io.PrintStream#ensureOpen()Vã
-9<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)Njava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)V´
-?printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;-
-
-setError()java.io.PrintStream#setError()Vá
--printf(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;?
-	append(C)2java.io.PrintStream#append(C)Ljava/io/PrintStream;M
-<init>(Ljava/lang/String;)/java.io.PrintStream#<init>(Ljava/lang/String;)Vá
--format(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;+
-	newLine()java.io.PrintStream#newLine()V)
-print(C)java.io.PrintStream#print(C)V1
-checkError()!java.io.PrintStream#checkError()Z+
-	println()java.io.PrintStream#println()V'
-close()java.io.PrintStream#close()V+
-	write([B)java.io.PrintStream#write([B)VO
-writeln(Ljava/lang/String;)0java.io.PrintStream#writeln(Ljava/lang/String;)V-
-
-println(C)java.io.PrintStream#println(C)VK
-write(Ljava/lang/String;).java.io.PrintStream#write(Ljava/lang/String;)VK
-print(Ljava/lang/Object;).java.io.PrintStream#print(Ljava/lang/Object;)V{
-1<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Fjava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/lang/String;)V5
-writeBytes([B)#java.io.PrintStream#writeBytes([B)VU
-<init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)VD
-	charset()7java.io.PrintStream#charset()Ljava/nio/charset/Charset;/
-println([C) java.io.PrintStream#println([C)Vã
-9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)V÷
+getChoix()7org.centrale.note.Ligne#getChoix()Ljava/util/ArrayList;÷
 java.lang.Iterablejava.lang.Objectd
 &forEach(Ljava/util/function/Consumer;):java.lang.Iterable#forEach(Ljava/util/function/Consumer;)VH
 spliterator()7java.lang.Iterable#spliterator()Ljava/util/Spliterator;å
@@ -254,7 +198,9 @@ iterator()2java.util.ArrayList#iterator()Ljava/util/Iterator;I
 size()java.util.ArrayList#size()I»
 java.util.Iteratorjava.lang.Objectv
 /forEachRemaining(Ljava/util/function/Consumer;)Cjava.util.Iterator#forEachRemaining(Ljava/util/function/Consumer;)V(
-remove()java.util.Iterator#remove()VäG
+remove()java.util.Iterator#remove()V+
+java.lang.AutoCloseablejava.lang.Object>
+java.io.Closeablejava.lang.Objectjava.lang.AutoCloseableäG
 java.util.Scannerjava.util.Iteratorjava.io.Closeablejava.lang.Object-
 saveState()java.util.Scanner#saveState()V)
 	hasNext()java.util.Scanner#hasNext()Z3
@@ -371,6 +317,86 @@ I<init>(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/Charset;)\java
 nextInt(I)java.util.Scanner#nextInt(I)I7
 reset(),java.util.Scanner#reset()Ljava/util/Scanner;=
 hasNextBigInteger()&java.util.Scanner#hasNextBigInteger()Z(
+java.lang.Appendablejava.lang.Object%
+java.io.Flushablejava.lang.ObjectÉ
+java.io.OutputStreamjava.io.Closeablejava.lang.Objectjava.io.FlushableS
+nullOutputStream()=java.io.OutputStream#nullOutputStream()Ljava/io/OutputStream;,
+	write([B)java.io.OutputStream#write([B)V*
+<init>()java.io.OutputStream#<init>()V(
+flush()java.io.OutputStream#flush()V0
+write([BII)!java.io.OutputStream#write([BII)V(
+close()java.io.OutputStream#close()Vé
+java.io.FilterOutputStreamjava.io.OutputStream2
+	write([B)%java.io.FilterOutputStream#write([B)V\
+<init>(Ljava/io/OutputStream;):java.io.FilterOutputStream#<init>(Ljava/io/OutputStream;)V.
+flush()#java.io.FilterOutputStream#flush()V0
+write(I)$java.io.FilterOutputStream#write(I)V6
+write([BII)'java.io.FilterOutputStream#write([BII)V.
+close()#java.io.FilterOutputStream#close()V±"
+java.io.PrintStreamjava.lang.Appendablejava.io.Closeablejava.io.FilterOutputStream+
+	write([C)java.io.PrintStream#write([C)V)
+print(J)java.io.PrintStream#print(J)V-
+
+println(J)java.io.PrintStream#println(J)V)
+print(F)java.io.PrintStream#print(F)V/
+writeln([C) java.io.PrintStream#writeln([C)V-
+
+println(F)java.io.PrintStream#println(F)V/
+write([BII) java.io.PrintStream#write([BII)VÅ
+4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Ijava.io.PrintStream#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)V)
+print(Z)java.io.PrintStream#print(Z)V1
+clearError()!java.io.PrintStream#clearError()V-
+
+println(Z)java.io.PrintStream#println(Z)Vi
+(<init>(Ljava/io/File;Ljava/lang/String;)=java.io.PrintStream#<init>(Ljava/io/File;Ljava/lang/String;)V)
+write(I)java.io.PrintStream#write(I)VO
+println(Ljava/lang/Object;)0java.io.PrintStream#println(Ljava/lang/Object;)VK
+print(Ljava/lang/String;).java.io.PrintStream#print(Ljava/lang/String;)Ví
+4requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Zjava.io.PrintStream#requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;)
+print(I)java.io.PrintStream#print(I)V-
+
+println(I)java.io.PrintStream#println(I)V'
+flush()java.io.PrintStream#flush()V´
+?format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;m
+ append(Ljava/lang/CharSequence;)Ijava.io.PrintStream#append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;l
+toCharset(Ljava/lang/String;)Kjava.io.PrintStream#toCharset(Ljava/lang/String;)Ljava/nio/charset/Charset;W
+<init>(ZLjava/io/OutputStream;)4java.io.PrintStream#<init>(ZLjava/io/OutputStream;)V+
+	print([C)java.io.PrintStream#print([C)Vq
+"append(Ljava/lang/CharSequence;II)Kjava.io.PrintStream#append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;)
+print(D)java.io.PrintStream#print(D)Vq
+,<init>(Ljava/lang/String;Ljava/lang/String;)Ajava.io.PrintStream#<init>(Ljava/lang/String;Ljava/lang/String;)V-
+
+println(D)java.io.PrintStream#println(D)VO
+println(Ljava/lang/String;)0java.io.PrintStream#println(Ljava/lang/String;)VW
+<init>(Ljava/io/OutputStream;Z)4java.io.PrintStream#<init>(Ljava/io/OutputStream;Z)VE
+<init>(Ljava/io/File;)+java.io.PrintStream#<init>(Ljava/io/File;)Vy
+0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Ejava.io.PrintStream#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)V1
+ensureOpen()!java.io.PrintStream#ensureOpen()Vã
+9<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)Njava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/nio/charset/Charset;)V´
+?printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)hjava.io.PrintStream#printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;-
+
+setError()java.io.PrintStream#setError()Vá
+-printf(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;?
+	append(C)2java.io.PrintStream#append(C)Ljava/io/PrintStream;M
+<init>(Ljava/lang/String;)/java.io.PrintStream#<init>(Ljava/lang/String;)Vá
+-format(Ljava/lang/String;[Ljava/lang/Object;)Vjava.io.PrintStream#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;+
+	newLine()java.io.PrintStream#newLine()V)
+print(C)java.io.PrintStream#print(C)V1
+checkError()!java.io.PrintStream#checkError()Z+
+	println()java.io.PrintStream#println()V'
+close()java.io.PrintStream#close()V+
+	write([B)java.io.PrintStream#write([B)VO
+writeln(Ljava/lang/String;)0java.io.PrintStream#writeln(Ljava/lang/String;)V-
+
+println(C)java.io.PrintStream#println(C)VK
+write(Ljava/lang/String;).java.io.PrintStream#write(Ljava/lang/String;)VK
+print(Ljava/lang/Object;).java.io.PrintStream#print(Ljava/lang/Object;)V{
+1<init>(Ljava/io/OutputStream;ZLjava/lang/String;)Fjava.io.PrintStream#<init>(Ljava/io/OutputStream;ZLjava/lang/String;)V5
+writeBytes([B)#java.io.PrintStream#writeBytes([B)VU
+<init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)VD
+	charset()7java.io.PrintStream#charset()Ljava/nio/charset/Charset;/
+println([C) java.io.PrintStream#println([C)Vã
+9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)V(
 java.lang.Comparablejava.lang.ObjectÉ
 java.lang.CharSequencejava.lang.Object.
 	isEmpty()!java.lang.CharSequence#isEmpty()ZE
@@ -545,85 +571,19 @@ valueOf(J)-java.lang.String#valueOf(J)Ljava/lang/String;2
 !<init>(Ljava/lang/StringBuilder;)3java.lang.String#<init>(Ljava/lang/StringBuilder;)V%
 value()java.lang.String#value()[B`
 %regionMatches(ZILjava/lang/String;II)7java.lang.String#regionMatches(ZILjava/lang/String;II)Zë
-=getBytesNoRepl1(Ljava/lang/String;Ljava/nio/charset/Charset;)Pjava.lang.String#getBytesNoRepl1(Ljava/lang/String;Ljava/nio/charset/Charset;)[BZ
+=getBytesNoRepl1(Ljava/lang/String;Ljava/nio/charset/Charset;)Pjava.lang.String#getBytesNoRepl1(Ljava/lang/String;Ljava/nio/charset/Charset;)[B‹
 org.centrale.note.Verifjava.lang.Object-
-<init>()!org.centrale.note.Verif#<init>()Ví
-org.centrale.note.Lignejava.lang.Object-
-<init>()!org.centrale.note.Ligne#<init>()V≥
-äremplirLigne(Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;)£org.centrale.note.Ligne#remplirLigne(Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;Lorg/centrale/note/PionCouleur;)VY
-<init>(Ljava/util/LinkedList;)7org.centrale.note.Ligne#<init>(Ljava/util/LinkedList;)V]
- setChoix(Ljava/util/LinkedList;)9org.centrale.note.Ligne#setChoix(Ljava/util/LinkedList;)VF
+<init>()!org.centrale.note.Verif#<init>()VØ
+@verifLigne(Lorg/centrale/note/Ligne;Lorg/centrale/note/Plateau;)korg.centrale.note.Verif#verifLigne(Lorg/centrale/note/Ligne;Lorg/centrale/note/Plateau;)Ljava/lang/Boolean;@
 
-getChoix()8org.centrale.note.Ligne#getChoix()Ljava/util/LinkedList;9
-java.util.Queuejava.util.Collectionjava.lang.Object4
-java.util.Dequejava.lang.Objectjava.util.Queue¯
- java.util.AbstractSequentialListjava.util.AbstractListd
-addAll(ILjava/util/Collection;)Ajava.util.AbstractSequentialList#addAll(ILjava/util/Collection;)ZV
-add(ILjava/lang/Object;):java.util.AbstractSequentialList#add(ILjava/lang/Object;)VM
-
-iterator()?java.util.AbstractSequentialList#iterator()Ljava/util/Iterator;6
-<init>()*java.util.AbstractSequentialList#<init>()VC
-get(I)9java.util.AbstractSequentialList#get(I)Ljava/lang/Object;g
-set(ILjava/lang/Object;)Kjava.util.AbstractSequentialList#set(ILjava/lang/Object;)Ljava/lang/Object;I
-	remove(I)<java.util.AbstractSequentialList#remove(I)Ljava/lang/Object;˝#
-java.util.LinkedListjava.util.Listjava.lang.Cloneablejava.util.Deque java.util.AbstractSequentialListjava.io.SerializableR
-linkLast(Ljava/lang/Object;)2java.util.LinkedList#linkLast(Ljava/lang/Object;)VN
-remove(Ljava/lang/Object;)0java.util.LinkedList#remove(Ljava/lang/Object;)Z>
-	toArray()1java.util.LinkedList#toArray()[Ljava/lang/Object;A
-pollFirst()2java.util.LinkedList#pollFirst()Ljava/lang/Object;A
-peekFirst()2java.util.LinkedList#peekFirst()Ljava/lang/Object;*
-<init>()java.util.LinkedList#<init>()V7
-get(I)-java.util.LinkedList#get(I)Ljava/lang/Object;h
-'readObject(Ljava/io/ObjectInputStream;)=java.util.LinkedList#readObject(Ljava/io/ObjectInputStream;)Vl
-)removeFirstOccurrence(Ljava/lang/Object;)?java.util.LinkedList#removeFirstOccurrence(Ljava/lang/Object;)ZV
-offerFirst(Ljava/lang/Object;)4java.util.LinkedList#offerFirst(Ljava/lang/Object;)Z?
-
-pollLast()1java.util.LinkedList#pollLast()Ljava/lang/Object;M
-outOfBoundsMsg(I)8java.util.LinkedList#outOfBoundsMsg(I)Ljava/lang/String;C
-removeLast()3java.util.LinkedList#removeLast()Ljava/lang/Object;(
-clear()java.util.LinkedList#clear()VJ
-add(ILjava/lang/Object;).java.util.LinkedList#add(ILjava/lang/Object;)VU
-descendingIterator()=java.util.LinkedList#descendingIterator()Ljava/util/Iterator;X
-lastIndexOf(Ljava/lang/Object;)5java.util.LinkedList#lastIndexOf(Ljava/lang/Object;)IE
-removeFirst()4java.util.LinkedList#removeFirst()Ljava/lang/Object;P
-indexOf(Ljava/lang/Object;)1java.util.LinkedList#indexOf(Ljava/lang/Object;)IP
-addLast(Ljava/lang/Object;)1java.util.LinkedList#addLast(Ljava/lang/Object;)VG
-superClone()7java.util.LinkedList#superClone()Ljava/util/LinkedList;[
-set(ILjava/lang/Object;)?java.util.LinkedList#set(ILjava/lang/Object;)Ljava/lang/Object;H
-add(Ljava/lang/Object;)-java.util.LinkedList#add(Ljava/lang/Object;)Z?
-
-peekLast()1java.util.LinkedList#peekLast()Ljava/lang/Object;9
-clone().java.util.LinkedList#clone()Ljava/lang/Object;D
-checkPositionIndex(I)+java.util.LinkedList#checkPositionIndex(I)VV
-<init>(Ljava/util/Collection;)4java.util.LinkedList#<init>(Ljava/util/Collection;)V<
-isElementIndex(I)'java.util.LinkedList#isElementIndex(I)Z7
-peek()-java.util.LinkedList#peek()Ljava/lang/Object;?
-
-getFirst()1java.util.LinkedList#getFirst()Ljava/lang/Object;d
-toArray([Ljava/lang/Object;)Djava.util.LinkedList#toArray([Ljava/lang/Object;)[Ljava/lang/Object;=
-	remove(I)0java.util.LinkedList#remove(I)Ljava/lang/Object;R
-contains(Ljava/lang/Object;)2java.util.LinkedList#contains(Ljava/lang/Object;)Z5
-pop(),java.util.LinkedList#pop()Ljava/lang/Object;y
-'unlinkLast(Ljava/util/LinkedList$Node;)Njava.util.LinkedList#unlinkLast(Ljava/util/LinkedList$Node;)Ljava/lang/Object;O
-listIterator(I)<java.util.LinkedList#listIterator(I)Ljava/util/ListIterator;{
-(unlinkFirst(Ljava/util/LinkedList$Node;)Ojava.util.LinkedList#unlinkFirst(Ljava/util/LinkedList$Node;)Ljava/lang/Object;q
-#unlink(Ljava/util/LinkedList$Node;)Jjava.util.LinkedList#unlink(Ljava/util/LinkedList$Node;)Ljava/lang/Object;å
-9linkBefore(Ljava/lang/Object;Ljava/util/LinkedList$Node;)Ojava.util.LinkedList#linkBefore(Ljava/lang/Object;Ljava/util/LinkedList$Node;)VB
-node(I)7java.util.LinkedList#node(I)Ljava/util/LinkedList$Node;=
-	getLast()0java.util.LinkedList#getLast()Ljava/lang/Object;X
-addAll(ILjava/util/Collection;)5java.util.LinkedList#addAll(ILjava/util/Collection;)ZV
-addAll(Ljava/util/Collection;)4java.util.LinkedList#addAll(Ljava/util/Collection;)ZL
-offer(Ljava/lang/Object;)/java.util.LinkedList#offer(Ljava/lang/Object;)ZT
-linkFirst(Ljava/lang/Object;)3java.util.LinkedList#linkFirst(Ljava/lang/Object;)V=
-	element()0java.util.LinkedList#element()Ljava/lang/Object;;
-remove()/java.util.LinkedList#remove()Ljava/lang/Object;7
-poll()-java.util.LinkedList#poll()Ljava/lang/Object;B
-checkElementIndex(I)*java.util.LinkedList#checkElementIndex(I)VR
-addFirst(Ljava/lang/Object;)2java.util.LinkedList#addFirst(Ljava/lang/Object;)VJ
-spliterator()9java.util.LinkedList#spliterator()Ljava/util/Spliterator;T
-offerLast(Ljava/lang/Object;)3java.util.LinkedList#offerLast(Ljava/lang/Object;)Zj
-(removeLastOccurrence(Ljava/lang/Object;)>java.util.LinkedList#removeLastOccurrence(Ljava/lang/Object;)ZJ
-push(Ljava/lang/Object;).java.util.LinkedList#push(Ljava/lang/Object;)Vl
-)writeObject(Ljava/io/ObjectOutputStream;)?java.util.LinkedList#writeObject(Ljava/io/ObjectOutputStream;)V&
-size()java.util.LinkedList#size()I>
-isPositionIndex(I)(java.util.LinkedList#isPositionIndex(I)Z
+getVerif()2org.centrale.note.Verif#getVerif()Ljava/util/List;Q
+setVerif(Ljava/util/List;)3org.centrale.note.Verif#setVerif(Ljava/util/List;)V9
+afficheVerif()'org.centrale.note.Verif#afficheVerif()Vï
+org.centrale.note.PionVeriforg.centrale.note.Pion1
+<init>()%org.centrale.note.PionVerif#<init>()V3
+	<init>(Z)&org.centrale.note.PionVerif#<init>(Z)V;
+setCouleur(Z)*org.centrale.note.PionVerif#setCouleur(Z)V9
+getCouleur())org.centrale.note.PionVerif#getCouleur()Z®
+org.centrale.note.Mainjava.lang.Object,
+<init>() org.centrale.note.Main#<init>()VN
+main([Ljava/lang/String;)1org.centrale.note.Main#main([Ljava/lang/String;)V

@@ -1,1 +1,1 @@
-org.centrale.note.PionVerif#isCouleur()Z
+org.centrale.note.Jeu#getJoueur1()Lorg/centrale/note/Joueur;

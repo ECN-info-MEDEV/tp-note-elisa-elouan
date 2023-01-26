@@ -1,0 +1,5 @@
+org.centrale.note.Verif#verifLigne(Lorg/centrale/note/Ligne;Lorg/centrale/note/Plateau;)Ljava/lang/Boolean;
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+org.centrale.note.PionVerif#<init>(Z)V
+org.centrale.note.PionVerif#instance-init#
