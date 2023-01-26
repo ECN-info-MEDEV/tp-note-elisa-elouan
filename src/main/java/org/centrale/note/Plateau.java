@@ -48,4 +48,38 @@ public class Plateau {
 
     }
 
+    
+    public int getNbLigne() {
+        return this.nbLigne;
+    }
+
+    public void setNbLigne(int nbLigne) {
+        this.nbLigne = nbLigne;
+    }
+
+    public ArrayList<Verif> getVerif() {
+        return this.verif;
+    }
+
+    public void setVerif(ArrayList<Verif> verif) {
+        this.verif = verif;
+    }
+
+    public ArrayList<Ligne> getEssai() {
+        return this.essai;
+    }
+
+    public void setEssai(ArrayList<Ligne> essai) {
+        this.essai = essai;
+    }
+
+    public ArrayList<PionCouleur> getCode() {
+        return this.code;
+    }
+
+    public void setCode(ArrayList<PionCouleur> code) {
+        this.code = code;
+    }
+
+
 }
