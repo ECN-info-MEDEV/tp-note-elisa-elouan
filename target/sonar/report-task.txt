@@ -1,0 +1,7 @@
+organization=ecn-info-medev
+projectKey=ECN-info-MEDEV_tp-note-elisa-elouan
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.36818
+dashboardUrl=https://sonarcloud.io/dashboard?id=ECN-info-MEDEV_tp-note-elisa-elouan
+ceTaskId=AYXktiCXg3sBCK0iZaXP
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYXktiCXg3sBCK0iZaXP

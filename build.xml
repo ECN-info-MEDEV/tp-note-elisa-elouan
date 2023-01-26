@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="testAnt" default="build" basedir=".">
-    <description>Test de projet</description>
+    <description>TP note Elisa Elouan</description>
 
     <property name="src.location" location="src" />
     <property name="classes.location" location="build/classes" />
     <property name="jar.location" location="build/jar" />
     <property name="build.location" location="build" />
-    <property name="doc.location" location="build/doc" />
-    <property name="test.location" location="${src.location}/test" />    
+    <property name="doc.location" location="build/doc" />  
     <property name="main.location" location="${src.location}/main" />
+    <property name="test.location" location="${src.location}/test" />
+    <property name="testclasses.location" location="build/test" />
+    <property name="test.report" location="build/test-report" />
 
     <property name="main-class" location="app.testAnt" />
 
@@ -19,6 +21,7 @@
     <target name="compile" description="Compile the Application">
         <echo message="Building application..." />
         <mkdir dir="${classes.location}" />
+        <mkdir dir="${testclasses.location}" />
         <javac srcdir="${main.location}" destdir="${classes.location}" includeAntRuntime="false" />
         <echo message="Done!" />
     </target>
@@ -44,6 +47,21 @@
                 <include name="**" />
             </fileset>
         </javadoc>
+    </target>
+
+    <target name="junit" depends="compile">
+        <javac srcdir="${test.location}" destdir="${testclasses.location}" includeAntRunTime="false"/>
+        <mkdir dir="${test.report}" />
+        <junitlauncher haltOnFailure="true" printSummary="true">
+            <classpath refid="${testclasses.location}"/>
+            <testclasses outputdir="${test.report}">
+                <fileset dir="${testclasses.location}">
+                    <include name="**/*Tests.class"/>
+                </fileset>
+                <listener type="legacy-xml" sendSysOut="true" sendSysErr="true"/>
+                <listener type="legacy-plain" sendSysOut="true" />
+            </testclasses>
+        </junitlauncher>
     </target>
 
     <target name="clean-build" depends="clean,jar" />
