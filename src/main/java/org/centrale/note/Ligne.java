@@ -6,6 +6,7 @@ import java.util.List;
 public class Ligne {
     private LinkedList<PionCouleur> choix;
 
+
     public Ligne() {
         this.choix = new LinkedList<PionCouleur>();
     }
@@ -41,5 +42,6 @@ public class Ligne {
         this.choix.add(c2);
         this.choix.add(c3);
     }
+
     
 }
